@@ -1,0 +1,79 @@
+/* Mobile first */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  background: #eef1f8;
+  color: #222;
+  line-height: 1.5;
+}
+
+.app { width: 100%; max-width: 600px; margin: 0 auto; padding: 1rem; }
+
+.card {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+  display: grid;
+  gap: 1rem;
+}
+
+h1 { font-size: 1.4rem; word-break: break-word; }
+
+input[type="text"] {
+  padding: .8rem; font: inherit; width: 100%;
+  border: 1px solid #ccd; border-radius: 8px;
+}
+input[type="text"]:focus { outline: 2px solid #4f46e5; border-color: transparent; }
+
+button { font: inherit; cursor: pointer; }
+
+/* Login */
+.login { margin-top: 3rem; text-align: center; }
+.login button, .form button {
+  padding: .8rem; font-weight: 600;
+  background: #4f46e5; color: #fff; border: 0; border-radius: 8px;
+}
+.login button:hover, .form button:hover { background: #4338ca; }
+
+/* Topo da lista */
+.topo { display: flex; justify-content: space-between; align-items: center; gap: .8rem; }
+.sair { background: transparent; border: 1px solid #ccd; border-radius: 8px; padding: .4rem .8rem; color: #555; }
+.sair:hover { background: #f3f4f8; }
+
+/* Formulário de tarefa */
+.form { display: flex; flex-direction: column; gap: .6rem; }
+
+/* Filtros */
+.filtros { display: flex; flex-direction: column; gap: .4rem; }
+.filtros button {
+  padding: .6rem; background: #fff; color: #333;
+  border: 1px solid #ccd; border-radius: 8px;
+}
+.filtros button.ativo { background: #4f46e5; color: #fff; border-color: #4f46e5; }
+
+/* Lista */
+.lista { list-style: none; display: grid; gap: .5rem; }
+.item {
+  display: flex; align-items: center; justify-content: space-between; gap: .5rem;
+  padding: .8rem; background: #f8f9fc; border-radius: 8px;
+}
+.item label { display: flex; align-items: center; gap: .6rem; flex: 1; cursor: pointer; word-break: break-word; }
+.item input[type="checkbox"] { width: 1.2rem; height: 1.2rem; flex-shrink: 0; }
+.item.concluida span { text-decoration: line-through; color: #888; }
+.remover { background: transparent; border: 0; color: #c0392b; font-size: 1.1rem; padding: .3rem .5rem; border-radius: 6px; }
+.remover:hover { background: #fdecea; }
+.vazio { text-align: center; color: #777; padding: 1rem 0; }
+
+/* Telas maiores */
+@media (min-width: 600px) {
+  .app { padding: 2rem 1rem; }
+  .card { padding: 1.8rem; }
+  h1 { font-size: 1.8rem; }
+  .form { flex-direction: row; }
+  .form input { flex: 1; }
+  .form button { padding: .8rem 1.4rem; }
+  .filtros { flex-direction: row; }
+  .filtros button { flex: 1; }
+}
