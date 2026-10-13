@@ -1,4 +1,3 @@
-/* Mobile first */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -29,7 +28,6 @@ input[type="text"]:focus { outline: 2px solid #4f46e5; border-color: transparent
 
 button { font: inherit; cursor: pointer; }
 
-/* Login */
 .login { margin-top: 3rem; text-align: center; }
 .login button, .form button {
   padding: .8rem; font-weight: 600;
@@ -37,15 +35,12 @@ button { font: inherit; cursor: pointer; }
 }
 .login button:hover, .form button:hover { background: #4338ca; }
 
-/* Topo da lista */
 .topo { display: flex; justify-content: space-between; align-items: center; gap: .8rem; }
 .sair { background: transparent; border: 1px solid #ccd; border-radius: 8px; padding: .4rem .8rem; color: #555; }
 .sair:hover { background: #f3f4f8; }
 
-/* Formulário de tarefa */
 .form { display: flex; flex-direction: column; gap: .6rem; }
 
-/* Filtros */
 .filtros { display: flex; flex-direction: column; gap: .4rem; }
 .filtros button {
   padding: .6rem; background: #fff; color: #333;
@@ -53,7 +48,6 @@ button { font: inherit; cursor: pointer; }
 }
 .filtros button.ativo { background: #4f46e5; color: #fff; border-color: #4f46e5; }
 
-/* Lista */
 .lista { list-style: none; display: grid; gap: .5rem; }
 .item {
   display: flex; align-items: center; justify-content: space-between; gap: .5rem;
@@ -66,7 +60,6 @@ button { font: inherit; cursor: pointer; }
 .remover:hover { background: #fdecea; }
 .vazio { text-align: center; color: #777; padding: 1rem 0; }
 
-/* Telas maiores */
 @media (min-width: 600px) {
   .app { padding: 2rem 1rem; }
   .card { padding: 1.8rem; }

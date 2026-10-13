@@ -4,7 +4,6 @@ import TarefaForm from './TarefaForm'
 import Filtros from './Filtros'
 import TarefaLista from './TarefaLista'
 
-// Tela exibida somente depois do login
 function ListaDeTarefas() {
   const [usuario, setUsuario] = useRecoilState(usuarioAtom)
 

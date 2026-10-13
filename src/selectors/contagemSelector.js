@@ -1,7 +1,6 @@
 import { selector } from 'recoil'
 import { tarefasAtom } from '../atoms/tarefasAtom'
 
-// Seletor: quantidade de tarefas em cada visão (mostrada nos botões de filtro)
 export const contagemSelector = selector({
   key: 'contagemTarefas',
   get: ({ get }) => {

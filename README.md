@@ -41,6 +41,6 @@ npm install
 npm run dev
 ```
 
-Abra o endereço exibido no terminal (normalmente http://localhost:5173).
+Abra o endereço exibido no terminal
 
 Os dados ficam apenas em memória: ao recarregar a página, a lista é reiniciada.
